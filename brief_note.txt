@@ -1,0 +1,50 @@
+This code is used for screening clinical and non-clinical cases.
+
+use logistic regression to predict clinical cases.
+create a screener test-only contains less amount of items.
+
+examle:
+total-300 items
+screener-50 items
+
+regardless what types of item response type, logistic regression can accomplish this goal-screening clinical 
+and nonclinical cases.
+
+psychometrical speaking-using less subtest items will result in less cost, easier administration, and 
+less possible distractions from multidimensionality, random bias. 
+
+power of test to differentiate clinical and nonclinical cases.
+
+sensitivity-how accurate to identify clinical case (type I error).
+
+specificity- how accurate to identify non-clinical case (type II error)
+
+* sensitivity and specificity must be both above 80% (celf-5 requirement)
+
+example: 84 cases (42 clinical/non-clinical cases)
+
+|reality |  c      | N    |
+-----------------------------
+|c       |   X(33) | Y(9) |
+-----------------------------
+|n       |   W(9)  | Z(33) |
+
+Positive predictive power= X*base rate /(X * base rate + (1-base rate)*Y)(33/42)
+Negative decision power= Z*(1-base rate) /(W*base rate + Z*(1-base rate))(33/42)
+
+The base rate here is 50% (42 clinical cases: 42 non-clinical cases)
+
+ROC curve (based on cut-off line)
+
+the more ROC curve above diagonal line, the better and more useful this ROC curve is
+
+
+1.Whether the LR model is significant?
+2. Wald CHI-SQUARE and P-value check (e.g., gender, treatment)
+3. check "Percent Concordant" value (e.g., the higher the better, at least 80% baseline)
+
+cut score must be selected by each age group.
+
+
+
+ 
